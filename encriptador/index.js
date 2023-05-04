@@ -1,3 +1,5 @@
+Swal.fire({ title:"Hola!!",text:"Este proyecto incluye las siguientes tecnologias: Javascript, Html5, Css3 y librerias como sweetalert2", icon:"success"});
+
 function encriptar(){
     let text = document.getElementById("text").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
@@ -21,7 +23,7 @@ function encriptar(){
         imagenes.src = "./imagenes/imagenes.png";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Desbes ingresar algun texto para encriptar");
+        swal.fire({ title:"Desbes ingresar algun texto para encriptar", icon:"warning"});
     }
        
 
@@ -52,7 +54,7 @@ function desencriptar(){
         imagenes.src = "./imagenes/imagenes.png";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Desbes ingresar algun texto para encriptar");
+        Swal.fire({ title:"Desbes ingresar algun texto para desencriptar", icon:"warning"});
     }
 
 
